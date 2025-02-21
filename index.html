@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <!--<div class="flex text-2xl ">
+            <span class="ml-5  inline  text-md font-bold cursor-pointer text-white justify-center  text-center "><img src="assets/folder.png" class=" h-10 inline mx-2 " alt="cake_icon">David Umunna</span>
+        </div>-->
+        <header class="header">
+            <span ><img src="assets/bookfinderlogo.png" class="image" alt="app_icon">Avid_Reads</span>
+        </header>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="search-form">
+            <input type="text" id="searchInput" placeholder="Search for books..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Book Display Section -->
+        <section id="bookDisplay" class="book-display">
+            <!-- Books will be dynamically added here -->
+        </section>
+
+        <!-- Pagination Controls -->
+        <div id="paginationControls" class="pagination-controls">
+            <button id="prevPage" disabled>Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextPage" disabled>Next</button>
+        </div>
+
+        <!-- Modal for Detailed Information -->
+        <div id="newsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="modal-title">News Title</h2>
+                <img class="modal-image" src="" alt="News Image">
+                <p class="modal-description">News Description</p>
+                <p class="modal-content">Detailed content of the news article...</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Book Finder. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>

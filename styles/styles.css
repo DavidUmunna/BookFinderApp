@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+    font-size: large;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.book-display .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.book-display .download-button:hover {
+    background-color: #2980b9;
+}
+.header {
+    background-color:black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.header .image{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.header span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.search-form input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #2980b9;
+}
+
+.book-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-display .book {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-display .book:hover {
+    transform: scale(1.05);
+}
+
+.book-display img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.book-display h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book-display p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    font-size: 16px;
+}
+
+/* Loading Indicator */
+.loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #3498db;
+}
+
+/* Error Message */
+.error {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 14px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
