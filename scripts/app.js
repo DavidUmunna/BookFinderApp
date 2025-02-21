@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function fetchBooks(query, page) {
-        const apiEndpoint = `https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=${(page - 1) * 10}&key=AIzaSyBEPQ99SQ0ptUvFwxmotMW1bAJK68LO6yc`;
+        const apiEndpoint = `https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=${(page - 1) * 10}&key=`;
         showLoading(true);
         fetch(apiEndpoint)
             .then(response => response.json())
